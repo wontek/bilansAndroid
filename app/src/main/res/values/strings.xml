@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">"Bilans "</string>
+    <string name="powered_by">powered by: Pytlak</string>
+    <string name="quad_pressure">Pressure Of Quad</string>
+    <string name="quad_capacity">Capacity Of Tank</string>
+    <string name="gas_kind">Kind Of Gas</string>
+    <string name="quad_number">Number Of Quad</string>
+    <string name="add_to_file">Add To File</string>
+    <string name="save_to_file">Save File</string>
+    <string name="saving_to_file">Saving to File</string>
+    <string name="adding_to_list">Adding to list</string>
+    <string name="title_activity_view_folder">ViewFolderActivity</string>
+    <string name="show_files">Show Files</string>
+    <string name="entry_message">Entry Name Of File</string>
+    <string name="number_tank">Number Of Tanks</string>
+</resources>

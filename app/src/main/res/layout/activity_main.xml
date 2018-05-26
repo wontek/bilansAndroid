@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_main_activity"
+    tools:context="com.lern.baby.seti.bilans.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/size_text_view"
+            android:layout_height="wrap_content"
+            android:text="@string/quad_number"
+            android:textSize="@dimen/tv_et_size_of_text" />
+
+        <EditText
+            android:id="@+id/et_number_of_quad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tv_et_size_of_text" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_1"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="@dimen/size_text_view"
+            android:layout_height="wrap_content"
+            android:text="@string/gas_kind"
+            android:textSize="@dimen/tv_et_size_of_text" />
+
+        <EditText
+            android:id="@+id/et_kind_of_gas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/tv_et_size_of_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/size_text_view"
+            android:layout_height="wrap_content"
+            android:text="@string/quad_capacity"
+            android:textSize="@dimen/tv_et_size_of_text" />
+
+        <EditText
+            android:id="@+id/et_capacity_of_quad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/tv_et_size_of_text" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/ll_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/size_text_view"
+            android:layout_height="wrap_content"
+            android:text="@string/quad_pressure"
+            android:textSize="@dimen/tv_et_size_of_text" />
+
+        <EditText
+            android:id="@+id/et_pressure_of_quad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="@dimen/tv_et_size_of_text" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_add_to_list"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="@string/add_to_file"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/ed_save_time_input" />
+
+    <Button
+        android:id="@+id/btn_save_to_file"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/save_to_file" />
+
+
+
+
+
+    <EditText
+        android:id="@+id/ed_save_time_input"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:textSize="17sp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:hint="@string/entry_message"
+        android:layout_marginBottom="23dp"
+        android:layout_above="@+id/btn_save_to_file"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btn_start_names_files_view_activity"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="@string/show_files"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
